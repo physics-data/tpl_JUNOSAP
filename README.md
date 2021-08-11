@@ -71,8 +71,8 @@ $$
 |`README.md`|说明文件|
 |`REPORT.md`|实验报告文件|
 |`geo.h5`|PMT 几何数据|
-|`data.h5`|模拟输出数据*|
-|`figures.pdf`|画图输出*|
+|`data.h5`|模拟输出数据\*|
+|`figures.pdf`|画图输出\*|
 
 \* 会被 `.gitignore` 忽略，你的 git 仓库中不应该出现这些文件。
 
