@@ -32,7 +32,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # 读入模拟数据
-    drawer = Drawer(h5.File(args.ipt, "r"), h5.File(args.geo, "r"))
+    data = h5.File(args.ipt, "r")
+    geo = h5.File(args.geo, "r")
+    drawer = Drawer(data, geo)
 
     # 画出分页的 PDF
     with PdfPages(args.opt) as pp:

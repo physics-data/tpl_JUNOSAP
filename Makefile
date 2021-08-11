@@ -19,7 +19,7 @@ data.h5: geo.h5
 figures.pdf: data.h5 geo.h5
 	python3 draw.py $< -g $(word 2,$^) -o $@
 
-test.pdf: data.h5
-	python3 test.py $^ -o $@
+test.pdf: data.h5 geo.h5
+	python3 test.py $< -g $(word 2,$^) -o $@
 
 .SECONDARY:
