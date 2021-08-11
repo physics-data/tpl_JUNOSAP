@@ -89,6 +89,14 @@ $$
 
 在完成这个作业之前，建议先看看已经准备好的实验报告模板，那里有一些温馨提示。
 
+关于 Makefile 的使用，下面列出你需要的命令：
+``` bash
+$ make data.h5 # 生成 data.h5
+$ make figures.pdf # 生成 figures.pdf
+$ make all # 与 `make figures.pdf` 相同
+$ make clean # 删除上述两个文件
+```
+
 `geo.h5` 格式：
 
 `Geometry` 表
